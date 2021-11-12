@@ -8,6 +8,8 @@ body {
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
 }
+
+/*Navigation Bar*/
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -28,27 +30,39 @@ body {
     font-size: 30px;
     
 }
+a:hover {
+    background-color: #FFD3DA;
+  }
+
 #nav-active {
     
     background-color: #FFD3DA;
     text-emphasis-color: white;
 }
+
+/*Container och headers*/
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 50%;
+    
 }
 .header {
     font-size: 80px;
     text-transform: uppercase;
     color: white;
-    
+    margin-bottom: 2%;
+    padding: 0;
 }
 .sub-header {
     color: white;
     font-size: 50px;
+    margin: 2%;
+    padding: 0;
 }
 
+/*Products*/
 .products-container {
     display: flex;
     margin-bottom: 10px;
@@ -68,32 +82,79 @@ body {
 .product-name {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
+.product-prize {
+    text-align: center;
+}
+
+/*Buttons*/
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 333px;
+    
+}
+.button {
+    border-radius: 10px;
+    border: solid #EC91D8 2px;
+    height: 30px;
+    width: 70px;
+    color: white;
+    background-color: #EC91D8;
+    margin: 0 1% 0 1% ;
+}
+
+/*Text*/
 .centered-text {
-    width: 50%;
+    
     text-align: center;
     font-size: 20px;
 }
-
+/*Container för contacts sidan då den har en annan layout*/
 .contacts-container {
     display: flex;
     justify-content: center;
-    margin: 4%;
+    margin-top: 5%;
 }
 .container1 {
-    width: 35%
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-right: 5px;
+    width: 30%;
+    
+    
+    
 }
+.contacts-header {
+    font-size: 80px;
+    text-transform: uppercase;
+    color: white;
+    
+    padding: 0;
+    margin: 0;
+}
+.contacts-text {
+    font-size: 24px;
+    
+}
+
 
 .me {
     border: white solid 5px;
     border-radius: 5px;
+    max-width: 400px;
 }
+
+/*Footer*/
 
 footer {
     display: flex;
     justify-content: center;
     background-size: cover;
     background-color:rgb(94, 94, 94) ;
-    color: white;;
+    color: white;
     
 }

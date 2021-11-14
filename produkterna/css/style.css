@@ -1,4 +1,5 @@
 body {
+    
     background-color: #FFBEEF;
     background-image: url(../img/background.png); 
     min-height: 500px;
@@ -7,6 +8,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 /*Navigation Bar*/
@@ -30,7 +36,7 @@ body {
     font-size: 30px;
     
 }
-a:hover {
+.nav-item:hover {
     background-color: #FFD3DA;
   }
 
@@ -45,7 +51,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50%;
+    
+    
     
 }
 .header {
@@ -58,31 +65,47 @@ a:hover {
 .sub-header {
     color: white;
     font-size: 50px;
-    margin: 2%;
+    margin-top: 0;
     padding: 0;
 }
 
 /*Products*/
-.products-container {
+.products-container , .workers-container {
     display: flex;
+    justify-content: center;
     margin-bottom: 10px;
-    
+    width: 70%;
+    flex-wrap: wrap;
 }
-.product {
+.product, .worker {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    
 }
-.poster {
+.product:hover {
+    background-color: rgba(236,145,216, 0.5);
+
+    border-radius: 5px;
+    cursor: pointer;
+}
+.poster, .worker-image {
     height: 500px;
+    padding: 0;
     border: white solid 5px;
     border-radius: 5px;
+    filter:drop-shadow(10px 10px 5px black)
+
 }
-.product-name {
+.product-name, .worker-name {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 .product-prize {
     text-align: center;
@@ -92,31 +115,44 @@ a:hover {
 
 .button-container {
     display: flex;
-    justify-content: center;
-    width: 333px;
-    
+    justify-content: space-between;
+    position: fixed;
+    top: 40%;
+    bottom: 40%;
+    width: 100%;
 }
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
-    border: solid #EC91D8 2px;
-    height: 30px;
-    width: 70px;
-    color: white;
-    background-color: #EC91D8;
+    border: none;
+    height: 230px;
+    width: 200px;
+    color: #EC91D8;
+    background-color: transparent;
     margin: 0 1% 0 1% ;
+    font-size: 200px;
 }
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
 
 /*Text*/
 .centered-text {
-    
+    width: 50%;
     text-align: center;
     font-size: 20px;
 }
-/*Container för contacts sidan då den har en annan layout*/
-.contacts-container {
+/*Container för contacts sidan och enskilda produkt sidan då de har en annan layout*/
+.contacts-container, .product-information-container {
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    margin-bottom: 10%;
 }
 .container1 {
     display: flex;
@@ -124,9 +160,6 @@ a:hover {
     padding: 0;
     margin-right: 5px;
     width: 30%;
-    
-    
-    
 }
 .contacts-header {
     font-size: 80px;
@@ -140,12 +173,41 @@ a:hover {
     font-size: 24px;
     
 }
+.add-to-cart {
+    background-color: #EC91D8;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    font-size: 24px;
+    border-radius: 5px;;
+    border:none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.add-to-cart:hover {
+    background-color: #FFD3DA;
+    cursor: pointer;
+}
 
-
-.me {
+.me, .product-page-photo {
     border: white solid 5px;
     border-radius: 5px;
     max-width: 400px;
+    filter:drop-shadow(10px 10px 5px black)
+}
+
+
+/*Shopping cart*/
+.cart {
+    display: flex;
+    flex
+    
+    
+    border: black solid 5px;
+}
+
+.cart-column {
+    padding: 0 20px 0 20px ;
 }
 
 /*Footer*/

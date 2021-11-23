@@ -1,126 +1,311 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Produkter</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!--<script src="js/slideshow.js"></script>-->
-    <script src="js/cart.js" async></script>
-</head>
-<body>
-    <!--Navigation bar-->
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="nav-item" ><h2>Hem</h2></a>
-            <a href="products.html" class="nav-item" id="nav-active"><h2>Produkter</h2></a>
-            <a href="contacts.html" class="nav-item"><h2>Kontakt</h2></a>
-            <a href="about.html" class="nav-item"><h2>Om oss</h2></a>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Produkter</title>
+      <link rel="stylesheet" href="css/style.css">
+      <script src="js/slideshow.js"></script>
+      <script src="js/cart.js" ></script>
+   </head>
+   <body>
+      <!--Navigation bar-->
+      <nav>
+         <div class="nav-container">
+            <a href="index.html" class="nav-item" >
+               <h2>Hem</h2>
+            </a>
+            <a href="products.html" class="nav-item" id="nav-active">
+               <h2>Produkter</h2>
+            </a>
+            <a href="contacts.html" class="nav-item">
+               <h2>Kontakt</h2>
+            </a>
+            <a href="about.html" class="nav-item">
+               <h2>Om oss</h2>
+            </a>
             <a class="nav-item"><img height="80px" src="img/cart.jpg"></a>
-        </div>
-    </nav>
-
-    <!--Knappar med fixed position-->
-    <div class="button-container">
-        <button class="button"  onclick="plusDivs(-1)">&#10094;</button>
-        <button class="button"  onclick="plusDivs(+1)">&#10095;</button>
-    </div>
-    <!--Container för alla produkter-->
-    <div class="container">
-        <!--Header-->
-        <h2 class="header">Alla produkter A-Ö</h2>
-        <!--Alla produkter. Products container har en width och wrappar alla posters-->
-        <div class="products-container">
-            
-            <!--Product container-->
-            <a class="product" href="12-angry-men.html">
-                <img src="img/posters/12-angry-men-poster.jpeg" class="poster" >
-                <p class="product-name">12 Angry Men</p>
-                <p class="product-prize"> $500</p>
-                <button class="add-to-cart">Lägg till i kundvagnen</button>
-            </a>
-            <a class="product">
-                <img src="img/posters/2001-a-space-odyssey-poster.jpeg" class="poster" >
-                <p class="product-name">2001: a space odyssey</p>
-                <p class="product-prize"> $500</p>
-                <button class="add-to-cart">Lägg till i kundvagnen</button>
-            </a>
-            <button class="product" onclick="plusDivs(2)">
-                <img src="img/posters/a-clockwork-orange-poster.jpeg" class="poster" >
-                <p class="product-name">A Clockwork Orange</p>
-                <p class="product-prize"> $500</p>
-            </button>
-            <button class="product" onclick="plusDivs(3)">
-                <img src="img/posters/a-fistful-of-dollars-poster.jpeg" class="poster" >
-                <p class="product-name">A Fistful of Dollars</p>
-                <p class="product-prize"> $500</p>
-            </button>
-            <button class="product" onclick="plusDivs(4)">
-                <img src="img/posters/apocalypse-now-poster.jpeg" class="poster" >
-                <p class="product-name">Apocalypse Now</p>
-                <p class="product-prize"> $500</p>
-            </button>
-            <button class="product" onclick="plusDivs(5)">
-                <img src="img/posters/back-to-the-future-poster.jpeg" class="poster" >
-                <p class="product-name">Back to the Future</p>
-                <p class="product-prize"> $500</p>
-            </button>
-            <button class="product" onclick="plusDivs(6)">
-                <img src="img/posters/birdman-poster.jpeg" class="poster" >
-                <p class="product-name">Birdman</p>
-                <p class="product-prize"> $500</p>
-            </button>
-            <button class="product" onclick="plusDivs(7)">
-                <img src="img/posters/blade-runner-poster.jpeg" class="poster" >
-                <p class="product-name">Blade Runner</p>
-                <p class="product-prize"> $500</p>
-            </button>
-            <button class="product" onclick="plusDivs(8)">
-                <img src="img/posters/casino-royale-poster.jpeg" class="poster" >
-                <p class="product-name">Casino Royale</p>
-                <p class="product-prize"> $500</p>
-            </button>
-            <button class="product" onclick="plusDivs(9)">
-                <img src="img/posters/children-of-men-poster.jpeg" class="poster" >
-                <p class="product-name">Children of Men</p>
-                <p class="product-prize"> $500</p>
-            </button>
-            <button class="product" onclick="plusDivs(10)">
-                <img src="img/posters/dawn-of-the-dead-poster.jpeg" class="poster" >
-                <p class="product-name">Dawn of the Dead</p>
-                <p class="product-prize"> $500</p>
-            </button>
-            <button class="product" onclick="plusDivs(11)">
-                <img src="img/posters/dead-mans-chest-poster.jpg" class="poster" >
-                <p class="product-name">Dead Man's Chest</p>
-                <p class="product-prize"> $500</p>
-            </button>
-        </div>
-        <!--Shopping cart-->
-        <h1>Kundvagn</h1>
-        <div class="cart">
-            
-            <div class="cart-column">
-                <h3>Föremål</h3>
-                    
+         </div>
+      </nav>
+      <!--Container för alla produkter-->
+      <div class="container">
+         <!--Header-->
+         <h2 class="header">Alla produkter A-Ö</h2>
+         <!--Alla produkter. Products container har en width och wrappar alla posters-->
+         <div class="products-container">
+            <!--Product container där thumbnail, namn, pris och add-to-cart button finns-->
+            <div class="product" >
+               <img src="img/posters/12-angry-men-poster.jpeg"  class="thumbnail" onclick="openModal();currentSlide(1)" >
+               <p class="product-name">12 Angry Men</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
             </div>
-            <div class="cart-column">
-                <h3>Kvantitet</h3>
-                    
+            <div class="product" >
+               <img src="img/posters/2001-a-space-odyssey-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(2)" >
+               <p class="product-name">2001: a space odyssey</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
             </div>
-            <div class="cart-column">
-                <h3>Pris</h3>
-                
-                    
+            <div class="product" >
+               <img src="img/posters/a-clockwork-orange-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(3)" >
+               <p class="product-name">A Clockwork Orange</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
             </div>
-            
-        </div>
-    </div>
-    
-    <!--Footer-->
-    <footer>
-        <p class="centered-text">Här har vi hemsidans footer där jag inte har någon information att ge ut.</p>
-    </footer>
-</body>
+            <div class="product"  >
+               <img src="img/posters/a-fistful-of-dollars-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(4)">
+               <p class="product-name">A Fistful of Dollars</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product"  >
+               <img src="img/posters/apocalypse-now-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(5)">
+               <p class="product-name">Apocalypse Now</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product"  >
+               <img src="img/posters/back-to-the-future-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(6)">
+               <p class="product-name">Back to the Future</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/birdman-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(7)">
+               <p class="product-name">Birdman</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/blade-runner-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(8)">
+               <p class="product-name">Blade Runner</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/casino-royale-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(9)">
+               <p class="product-name">Casino Royale</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/children-of-men-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(10)">
+               <p class="product-name">Children of Men</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/dawn-of-the-dead-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(11)">
+               <p class="product-name">Dawn of the Dead</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/dead-mans-chest-poster.jpg" class="thumbnail" onclick="openModal();currentSlide(12)">
+               <p class="product-name">Dead Man's Chest</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/fight-club-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(13)">
+               <p class="product-name">Fight Club</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/forrest-gump-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(14)">
+               <p class="product-name">Forrest Gump</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/full-metal-jacket-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(15)">
+               <p class="product-name">Full Metal Jacket</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/infinity-war-poster.jpg" class="thumbnail" onclick="openModal();currentSlide(16)">
+               <p class="product-name">Infinity War</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/kingsman-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(17)">
+               <p class="product-name">Kingsman</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/luca-poster.jpg" class="thumbnail" onclick="openModal();currentSlide(18)">
+               <p class="product-name">Luca</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/nightcrawler-poster.jpg" class="thumbnail" onclick="openModal();currentSlide(19)">
+               <p class="product-name">Nightcrawler</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/the-bridge-on-the-river-kwai-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(20)">
+               <p class="product-name">The Bridge on the River Kwai</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="product">
+               <img src="img/posters/the-return-of-the-king-poster.jpeg" class="thumbnail" onclick="openModal();currentSlide(21)">
+               <p class="product-name">The Return of the King</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+         </div>
+      </div>
+      <!--Modal som kommer upp när man klickar på en thumbnail-->
+      <div id="myModal" class="modal">
+         <!--X-et för att stänga ned modal-->
+         <span class="close cursor" onclick="closeModal()">&times;</span>
+         <!--All modal content-->
+         <div class="modal-content">
+            <!--MySlides containers har samma egenskaper som en product container-->
+            <div class="mySlides">
+               <img src="img/posters/12-angry-men-poster.jpeg"  class="poster"  >
+               <p class="product-name">12 Angry Men</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/2001-a-space-odyssey-poster.jpeg" class="poster" >
+               <p class="product-name">2001: a space odyssey</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/a-clockwork-orange-poster.jpeg" class="poster" >
+               <p class="product-name">A Clockwork Orange</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/a-fistful-of-dollars-poster.jpeg" class="poster">
+               <p class="product-name">A Fistful of Dollars</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/apocalypse-now-poster.jpeg" class="poster">
+               <p class="product-name">Apocaylpse Now</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/back-to-the-future-poster.jpeg" class="poster">
+               <p class="product-name">Back to the Future</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/birdman-poster.jpeg" class="poster">
+               <p class="product-name">Birdman</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/blade-runner-poster.jpeg" class="poster">
+               <p class="product-name">Blade Runner</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/casino-royale-poster.jpeg" class="poster">
+               <p class="product-name">Casino Royale</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/children-of-men-poster.jpeg" class="poster">
+               <p class="product-name">Children of Men</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/dawn-of-the-dead-poster.jpeg" class="poster">
+               <p class="product-name">Dawn of the Dead</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/dead-mans-chest-poster.jpg" class="poster">
+               <p class="product-name">Dead Man's Chest</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/fight-club-poster.jpeg" class="poster">
+               <p class="product-name">Fight Club</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/forrest-gump-poster.jpeg" class="poster">
+               <p class="product-name">Forrest Gump</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/full-metal-jacket-poster.jpeg" class="poster">
+               <p class="product-name">Full Metal Jacket</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/infinity-war-poster.jpg" class="poster">
+               <p class="product-name">Infinity War</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/kingsman-poster.jpeg" class="poster">
+               <p class="product-name">Kingsman</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/luca-poster.jpg" class="poster">
+               <p class="product-name">Luca</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/nightcrawler-poster.jpg" class="poster">
+               <p class="product-name">Nightcrawler</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/the-bridge-on-the-river-kwai-poster.jpeg" class="poster">
+               <p class="product-name">The Bridge on the River Kwai</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <div class="mySlides">
+               <img src="img/posters/the-return-of-the-king-poster.jpeg" class="poster">
+               <p class="product-name">The Return of the King</p>
+               <p class="product-prize"> $500</p>
+               <button class="add-to-cart">Lägg till i kundvagnen</button>
+            </div>
+            <!-- Next/previous controls -->
+            <div class="button-container">
+               <button class="prev"  onclick="plusSlides(-1)">&#10094;</button>
+               <button class="next"  onclick="plusSlides(1)">&#10095;</button>
+            </div>
+         </div>
+      </div>
+      <!--Footer med centrerad text-->
+      <footer>
+         <p class="centered-text">Här har vi hemsidans footer där jag inte har någon information att ge ut.<br><br> Kolla in hemsidans dokumentation <a href="documentation.html" id="footer-link">här</a>.</p>
+      </footer>
+   </body>
 </html>

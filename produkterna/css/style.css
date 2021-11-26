@@ -228,6 +228,13 @@ a {
     text-align: center;
     font-size: 24px;
 }
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*Container för contacts sidan och enskilda produkt sidan då de har en annan layout*/
 .contacts-container, .product-information-container {
     display: flex;
@@ -285,6 +292,7 @@ a {
 footer {
     display: flex;
     justify-content: center;
+    align-self: flex-end;
     background-size: cover;
     background-color:rgb(94, 94, 94) ;
     color: white;
